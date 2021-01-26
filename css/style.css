@@ -61,7 +61,6 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-
 }
 
 .introduction-img {
@@ -96,6 +95,91 @@
   padding-bottom: 40px;
 }
 
+.article-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-img li:nth-child(n+4) {
+  padding-top: 80px;
+}
+
+.article-content {
+  margin-top: 90px;
+}
+
+.article-content__text {
+  color: #c0c0c0;
+  display: inline-block;
+  width: 42%;
+}
+
+.article-content__btn {
+  display: inline-block;
+  margin-left: 90px;
+  padding: 14px 20px;
+  vertical-align: top;
+}
+
+/* skills */
+.skills {
+  background-color: #4e4e4e;
+  color: #fff;
+  padding: 70px 0 100px 0;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 24px;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.caption {
+  font-size: 16px;
+}
+
+/* sns */
+.sns {
+  padding: 200px 0;
+}
+
+.sns-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-inner li a {
+  display: inline-block;
+  text-align: center;
+  padding: 30px 0;
+  width: 185px;
+}
+
+.sns-inner li a:hover {
+  background-color: #fff;
+}
+
+.sns-inner li i {
+  color: #74cfae;
+}
+
+/* footer */
+.footer {
+  background-color: #74cfae;
+  padding: 20px 0 25px 0;
+}
+
+.footer-text {
+  color: #fff;
+  text-align: right;
+}
+
 /* 共通クラス */
 .body {
   background-color: #f2f2f2;
@@ -106,7 +190,7 @@
 
 .inner {
   margin: 0 auto;
-  width: 100%;
+  width: 1100px;
 }
 
 .btn {
