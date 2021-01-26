@@ -1,0 +1,133 @@
+/* header */
+.header {
+  position: fixed;
+  background-color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-box {
+  text-align: right;
+}
+
+.header-icon {
+  color: #4e4e4e;
+  float: left;
+}
+
+.header-btn {
+  display: inline-block;
+  padding: 14px 12px;
+}
+
+/* main */
+
+/* theme */
+.theme {
+  padding: 250px 0;
+}
+
+.theme-inner {
+  text-align: center;
+}
+
+.theme-inner__title {
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.theme-inner__sub {
+  color: #c0c0c0;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+/* introduction */
+.introduction {
+  background-color: #74cfae;
+  padding-top: 50px;
+}
+
+.introduction-inner{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+.introduction-img {
+  width: 40%;
+}
+
+.intoroduction-text {
+  color: #fff;
+  width: 60%;
+}
+
+.introduction-title {
+  font-size: 24px;
+  padding-bottom: 35px;
+}
+
+.introduction-sub {
+  font-size: 20px;
+}
+
+/* article */
+.article {
+  padding: 60px 0 70px 0;
+}
+
+.article-inner {
+  text-align: center;
+}
+
+.article-title {
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+
+/* 共通クラス */
+.body {
+  background-color: #f2f2f2;
+  color: #333;
+  width: 1100px;
+  font-family: 'Lato';
+}
+
+.inner {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 1; 
+}
+
+.main {
+  padding-top: 78px;
+}
+
+.raleway {
+  font-family: 'Raleway';
+}
+
+.transition {
+  transition: all 0.3s;
+}
