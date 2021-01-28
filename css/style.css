@@ -1,6 +1,42 @@
+@charset "utf-8";
+
+/* 共通クラス */
+.body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: 'Lato';
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.btn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #333; 
+}
+
+.main {
+  padding-top: 78px;
+}
+
+.raleway {
+  font-family: 'Raleway';
+}
+
+.transition {
+  transition: all 0.3s;
+}
+
 /* header */
 .header {
-  position: fixed;
   background-color: #fff;
   padding: 15px 0;
   position: fixed;
@@ -9,13 +45,19 @@
   z-index: 20;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .header-inner {
   display: flex;
   justify-content: space-between;
 }
 
 .header-box {
-  text-align: right;
+  float: right;
 }
 
 .header-icon {
@@ -48,7 +90,7 @@
 .theme-inner__sub {
   color: #c0c0c0;
   font-size: 30px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* introduction */
@@ -64,6 +106,7 @@
 }
 
 .introduction-img {
+  vertical-align: top;
   width: 40%;
 }
 
@@ -74,16 +117,16 @@
 
 .introduction-title {
   font-size: 24px;
-  padding-bottom: 35px;
 }
 
 .introduction-sub {
   font-size: 20px;
+  margin-top: 35px;
 }
 
 /* article */
 .article {
-  padding: 60px 0 70px 0;
+  padding: 60px 0 70px;
 }
 
 .article-inner {
@@ -92,16 +135,18 @@
 
 .article-title {
   font-size: 24px;
-  padding-bottom: 40px;
 }
 
 .article-img {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
   justify-content: space-between;
+  vertical-align: top;
 }
 
 .article-img li a {
+  display: block;
   opacity: 0.7;
 }
 
@@ -110,7 +155,7 @@
 }
 
 .article-img li:nth-child(n+4) {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .article-content {
@@ -118,7 +163,6 @@
 }
 
 .article-content__text {
-  color: #c0c0c0;
   display: inline-block;
   width: 42%;
 }
@@ -134,7 +178,7 @@
 .skills {
   background-color: #4e4e4e;
   color: #fff;
-  padding: 70px 0 100px 0;
+  padding: 70px 0 100px;
   text-align: center;
 }
 
@@ -180,7 +224,7 @@
 /* footer */
 .footer {
   background-color: #74cfae;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 25px;
 }
 
 .footer-text {
@@ -188,37 +232,58 @@
   text-align: right;
 }
 
-/* 共通クラス */
-.body {
-  background-color: #f2f2f2;
-  color: #333;
-  font-family: 'Lato';
+
+/* メディアクエリ */
+/* スマホ表示 */
+@media (max-width: 767px) {
+  .inner {
+    width: 97%;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .hamburger_menu {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 13px;
+    padding: 10px;
+    width: 25px;
+    position: absolute;
+    right: 20px;
+  }
+
+  .hamburger_menu span {
+    border: 2px #c0c0c0;
+    border-radius: 3px;
+    background-color: #c0c0c0;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25px;
+    position: absolute;
+  }
+
+  .hamburger_menu span:nth-of-type(2) {
+    top: 16px;
+  }
+
+  .hamburger_menu span:nth-of-type(3) {
+    top: 22px;
+  }
 }
 
-.inner {
-  margin: 0 auto;
-  width: 1100px;
+/* タブレット */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
 }
 
-.btn {
-  background-color: #74cfae;
-  color: #fff;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  color: #333; 
-}
-
-.main {
-  padding-top: 78px;
-}
-
-.raleway {
-  font-family: 'Raleway';
-}
-
-.transition {
-  transition: all 0.3s;
+/* PC表示 */
+@media (min-width: 1200px) {
+  .inner {
+    width: 1100px;
+  }
 }
