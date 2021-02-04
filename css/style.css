@@ -67,6 +67,11 @@
   padding: 14px 12px;
 }
 
+
+.hamburger_menu {
+  display: none;
+}
+
 /* main */
 
 /* theme */
@@ -139,6 +144,7 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 0;
+  margin-top: 40px;
   justify-content: space-between;
   vertical-align: top;
 }
@@ -237,17 +243,6 @@
 
 
 /* メディアクエリ */
-/* PC表示 */
-@media (min-width: 1120px) {
-  .inner {
-    width: 1100px;
-  }
-
-  .hamburger_menu {
-    display: none;
-  }
-}
-
 /* タブレット */
 @media (max-width: 1199px) {
   .inner {
@@ -308,6 +303,10 @@
     display: none;
   }
 
+  .header-box {
+    display: none;
+  }
+
   .hamburger_menu {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -342,7 +341,7 @@
   }
 
   .sns {
-    padding-top: 50px;
+    padding: 50px 0 50px;
   }
 
   .sns-inner {
